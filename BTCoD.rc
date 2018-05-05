@@ -1,0 +1,282 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\BTCoD.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\BTCoD.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 BTCoD"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "BTCoD 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 杨广翔 (C) 2006",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_BTCOD_DIALOG DIALOGEX 0, 0, 279, 233
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Class of Device/Service (CoD)  by yang.guangxiang"
+FONT 10, "宋体"
+BEGIN
+    LTEXT           "Class",IDC_STATIC,7,9,27,11
+    EDITTEXT        IDC_EDIT_CLASS_HEX,34,7,72,14,ES_NUMBER
+    CONTROL         "Limited Discoverable Mode ",IDC_CHECK_LIMITED,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,11,39,116,10
+    CONTROL         "Positioning (Location identification)",
+                    IDC_CHECK_POSITION,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    11,52,163,10
+    CONTROL         "Networking (LAN, Ad hoc, ...)",IDC_CHECK_NETWORK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,11,65,163,10
+    CONTROL         "Rendering (Printing, Speaker, ...)",IDC_CHECK_RENDER,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,78,163,10
+    CONTROL         "Capturing (Scanner, Microphone, ...)",IDC_CHECK_CAPTURE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,91,163,10
+    CONTROL         "Object Transfer (v-Inbox, v-Folder, ...)",
+                    IDC_CHECK_OBJECT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    11,104,179,10
+    CONTROL         "Audio (Speaker, Microphone, Headset service, ...)",
+                    IDC_CHECK_AUDIO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,
+                    117,213,10
+    CONTROL         "Telephony (Cordless telephony, Modem, Headset service, ...)",
+                    IDC_CHECK_TELEPHONY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,11,130,245,10
+    GROUPBOX        "Major Service Classes",IDC_STATIC,7,25,265,132
+    DEFPUSHBUTTON   "退出",IDOK,221,172,50,14
+    PUSHBUTTON      "关于",IDABOUT,221,202,50,14
+    GROUPBOX        "Device Classes",IDC_STATIC,7,164,207,62
+    COMBOBOX        IDC_COMBO_MAJOR,34,180,173,76,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Major",IDC_STATIC,9,183,25,11
+    COMBOBOX        IDC_COMBO_MINOR,34,207,173,76,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Minor",IDC_STATIC,9,207,25,11
+    CONTROL         "Information (WEB-server, WAP-server, ...)",
+                    IDC_CHECK_INFORMATION,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,11,143,180,10
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "BTCoD Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "BTCoD\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2006\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "BTCoD.EXE\0"
+            VALUE "ProductName", "BTCoD 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_BTCOD_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 272
+        VERTGUIDE, 34
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 226
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_BTCOD_DIALOG DLGINIT
+BEGIN
+    IDC_COMBO_MAJOR, 0x403, 14, 0
+0x694d, 0x6373, 0x6c65, 0x616c, 0x656e, 0x756f, 0x0073, 
+    IDC_COMBO_MAJOR, 0x403, 40, 0
+0x6f43, 0x706d, 0x7475, 0x7265, 0x2820, 0x6564, 0x6b73, 0x6f74, 0x2c70, 
+0x6f6e, 0x6574, 0x6f62, 0x6b6f, 0x202c, 0x4450, 0x2c41, 0x2e20, 0x2e2e, 
+0x202e, 0x0029, 
+    IDC_COMBO_MAJOR, 0x403, 49, 0
+0x6850, 0x6e6f, 0x2065, 0x6328, 0x6c65, 0x756c, 0x616c, 0x2c72, 0x6320, 
+0x726f, 0x6c64, 0x7365, 0x2c73, 0x7020, 0x7961, 0x6870, 0x6e6f, 0x2c65, 
+0x6d20, 0x646f, 0x6d65, 0x202c, 0x2e2e, 0x292e, "\000" 
+    IDC_COMBO_MAJOR, 0x403, 26, 0
+0x414c, 0x204e, 0x4e2f, 0x7465, 0x6f77, 0x6b72, 0x4120, 0x6363, 0x7365, 
+0x2073, 0x6f70, 0x6e69, 0x0074, 
+    IDC_COMBO_MAJOR, 0x403, 47, 0
+0x7541, 0x6964, 0x2f6f, 0x6956, 0x6564, 0x206f, 0x6828, 0x6165, 0x7364, 
+0x7465, 0x732c, 0x6570, 0x6b61, 0x7265, 0x732c, 0x6574, 0x6572, 0x2c6f, 
+0x7620, 0x7263, 0x2e2e, 0x2e2e, 0x292e, "\000" 
+    IDC_COMBO_MAJOR, 0x403, 48, 0
+0x6550, 0x6972, 0x6870, 0x7265, 0x6c61, 0x2820, 0x6f6d, 0x7375, 0x2c65, 
+0x6a20, 0x796f, 0x7473, 0x6369, 0x2c6b, 0x6b20, 0x7965, 0x6f62, 0x7261, 
+0x7364, 0x202c, 0x2e2e, 0x2e2e, 0x202e, 0x0029, 
+    IDC_COMBO_MAJOR, 0x403, 50, 0
+0x6d49, 0x6761, 0x6e69, 0x2067, 0x7028, 0x6972, 0x746e, 0x6e69, 0x2c67, 
+0x7320, 0x6163, 0x6e6e, 0x7265, 0x202c, 0x6163, 0x656d, 0x6172, 0x202c, 
+0x6964, 0x7073, 0x616c, 0x2c79, 0x2e20, 0x2e2e, 0x0029, 
+    IDC_COMBO_MAJOR, 0x403, 9, 0
+0x6557, 0x7261, 0x6261, 0x656c, "\000" 
+    IDC_COMBO_MAJOR, 0x403, 4, 0
+0x6f54, 0x0079, 
+    IDC_COMBO_MAJOR, 0x403, 50, 0
+0x6e55, 0x6163, 0x6574, 0x6f67, 0x6972, 0x657a, 0x2c64, 0x7320, 0x6570, 
+0x6963, 0x6966, 0x2063, 0x6564, 0x6976, 0x6563, 0x6320, 0x646f, 0x2065, 
+0x6f6e, 0x2074, 0x7073, 0x6365, 0x6669, 0x6569, 0x0064, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 BTCoD(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\BTCoD.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
